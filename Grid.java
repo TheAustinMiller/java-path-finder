@@ -30,12 +30,6 @@ public class Grid {
     }
 
     public Grid(int startX, int startY, int endX, int endY) {
-        grid[6][6] = 1;
-        grid[6][7] = 1;
-        grid[6][8] = 1;
-        grid[6][5] = 1;
-        grid[6][4] = 1;
-        grid[3][3] = 1;
         this.startX = startX;
         this.startY = startY;
         grid[startX][startY] = 2;
@@ -201,7 +195,7 @@ public class Grid {
     public int getEndY() { return endY; }
     public void setStartX(int startX) { this.startX = startX; }
     public void setStartY(int startY) { this.startY = startY; }
-    public void setEndX(int EndX) { this.endX = endX; }
-    public void setEndY(int EndY) { this.endY = endY; }
+    public void setEndX(int endX) { this.endX = endX; }
+    public void setEndY(int endY) { this.endY = endY; }
     public int[][] getGrid() { return grid; }
 }
